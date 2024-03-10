@@ -44,7 +44,7 @@ func searchInsert(nums []int, target int) int {
 		if target > midVal {
 			start = mid //缩小查找范围：start后移
 		} else if target < midVal {
-			end = mid //所辖查找范围：end后移
+			end = mid //缩小查找范围：end后移
 		} else {
 			return mid //中间下标正中目标
 		}
